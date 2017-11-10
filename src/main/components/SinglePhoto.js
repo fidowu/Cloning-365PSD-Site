@@ -1,7 +1,6 @@
 import React from 'react';
 import Photo from './Photo';
 import Statistics from './statistics';
-import StarRating from 'react-star-rating';
 
 //Shows the single photo view
 
