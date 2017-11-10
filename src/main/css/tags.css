@@ -1,0 +1,114 @@
+
+.azNavigation{
+
+    position: relative;
+    top : 100px;
+    max-width : 97%;
+    min-height : 600px;
+
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 3px;
+
+
+    display: flex;
+    flex-direction :column;
+}
+
+
+.abc-buttons {
+
+    flex: 1;
+
+    display: flex;
+    flex-wrap : wrap;
+    align-items : baseline
+}
+
+.btn {
+    max-width: 100%;
+    font-weight: 600;
+    padding: 9px 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    transition: .3s;
+    line-height: 20px;
+    white-space: normal;
+    transition: .0s;
+    text-transform: uppercase;
+    color: #e98d00;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset,0 1px 2px rgba(0,0,0,0.05);
+    border:0.5px solid lightgrey;
+    cursor : pointer;
+
+}
+
+abc-buttons .btn selected {
+    
+    background-color: yellow;
+}
+
+
+.tags-cloud {
+
+    flex : 3;
+
+    margin-top : 5px;
+    margin-right : 10px;
+
+    display: flex;
+    flex-wrap : wrap;
+    align-content : start;
+}
+
+.tags-cloud li {
+
+    list-style: none;
+
+    margin-right : 10px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.tags-cloud .brown {
+    color: #963;
+}
+.tags-cloud .green {
+    color: #393;
+}
+.tags-cloud .purple {
+    color: #c6c;
+}
+.tags-cloud .yellow {
+    color: #fc3;
+}
+.tags-cloud .red {
+    color: #c03;
+}
+.tags-cloud .blue {
+    color: #36c;
+}
+.tags-cloud .f14 {
+    font-size: 14px;
+}
+.tags-cloud .f18 {
+    font-size: 18px;
+}
+.tags-cloud .f20 {
+    font-size: 20px;
+}
+.tags-cloud .f24 {
+    font-size: 24px;
+}
+.tags-cloud .f24 {
+    font-size: 24px;
+}
+.tags-cloud .f30 {
+    font-size: 30px;
+}
+.tags-cloud .f16 {
+    font-size: 16px;
+}

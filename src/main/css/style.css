@@ -1,0 +1,191 @@
+@import url("tags.css");
+@import url("navmenu.css");
+@import url("submenu.css");
+@import url("dialog.css");
+
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html, body {
+
+    color: #444;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+
+.photo-gallery {
+
+	flex : 1;
+	margin: 0 auto;
+	position: relative;
+
+	max-width : 100%;
+
+	display : flex;
+	flex-wrap : wrap;
+	justify-content: center;
+  padding-top: 20px;
+
+  border-top: 1px solid grey;
+}
+
+
+.gallery-caption-container {
+
+	flex : 1;
+ 	
+	display: flex;
+
+ 	 background:white;
+	 position :relative;
+	 margin-bottom: 20px;
+   margin-right: 5px;
+
+
+}
+
+.photo-gallery .gallery-caption-container .gallery-wrap img {
+
+	width: 250px;
+	height: 250px;
+
+}
+
+.single-photo .gallery-caption-container .gallery-wrap img {
+
+	width:  570px;
+	height: 550px;
+
+ }
+
+
+.grid-photo {
+
+    width : 100%;
+   /*margin :0;*/
+}
+
+.statistics {
+
+	flex : 1;
+  height: 635px;
+  padding: 20px;
+  margin-left : 20px;
+
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border-radius: 3px;
+
+}
+
+.single-photo {
+
+  @extend .gallery-caption-container; 
+  max-width: 900px;
+
+  display: flex;
+  background: white;
+
+  position: relative;
+	top : 10px;
+
+ }
+
+.gallery-wrap {
+
+ 	position: relative;
+ 	/*max-width: 1100px;*/
+}
+
+figcaption {
+
+	border :1px solid grey;
+	text-align: center;
+}
+
+
+.label-result {
+
+	display: flex;
+	max-width : 300px;
+
+	margin-top: 10px;
+	margin-left:10px;
+
+	line-height: 2em;	
+
+}
+
+.label-result .likes button {
+
+  margin-left: 15px;
+}
+
+
+.lineClass {
+
+}
+
+.badge {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1;
+    background-color : #eee;;
+    border: 2px solid;
+    border-radius: 3px;
+    color: #666;
+    text-shadow: 0 1px 0 #fff;
+}
+
+. submenu .badge {
+
+  margin-right : 20px;
+}
+
+.labelMenu {
+
+   width: 250px;
+   display: inline-block;
+   white-space: nowrap;
+}
+
+ .label {
+
+  flex: 1;
+  font-weight: bold;
+  width: 250px;
+
+}
+
+ .result {
+  flex :2;
+  width: 50px;
+
+}
+
+#root {
+
+  width : 100%;
+
+}
+
+.container {
+
+	display : flex;
+	flex-direction : column;
+
+}
+
+.menu-wrapper {
+
+	flex : 1;
+}
+
+.sub-menu {
+
+  flex : 1;
+
+}
+

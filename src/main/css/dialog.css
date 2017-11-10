@@ -1,0 +1,67 @@
+#dialog-form .pa10 {
+	padding: 10px !important;
+}
+
+#dialog-form .pt15 {
+	padding-top: 15px !important;
+}
+
+#dialog-form .italic {
+
+font-style: italic;
+}
+
+#dialog-form .text-color {
+	    color: #08c;
+}
+
+.#dialog-form pb15 {
+    padding-bottom: 15px !important;
+}
+
+#dialog-form .px20 {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+
+#dialog-form .text-muted {
+    color: #777;
+}
+
+#dialog-form h1, #dialog-form h2, #dialog-form .h5 {
+	font-weight: normal;
+}
+
+#dialog-form h2 {
+	font-size: 24px;
+	text-align: center;
+}
+
+#dialog-form .h5 {
+	font-size: 14px;
+	text-align: center;
+}
+
+#dialog-form .py15 {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+#dialog-form fieldset {
+	display : flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#dialog-form input[type="text"] {
+
+	flex: 5;
+	margin-left: 5px;
+
+}
+
+#dialog-form .onsubmit {
+		flex: 1;
+		padding: 4.5px 5px;
+
+}

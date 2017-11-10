@@ -1,0 +1,107 @@
+.menu-wrapper nav {
+
+  position: relative;
+  width: 100%;
+  background: #2a2a2a;
+  font-size: 16px;
+
+}
+
+/* first stage */
+
+.menu-wrapper nav > ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.menu-wrapper nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-wrapper nav ul li {
+  color: #fff;
+  list-style: none;
+  transition: 0.5s;
+}
+
+.menu-wrapper nav > ul > li > a {
+  padding: 15px 25px;
+}
+
+.menu-wrapper nav ul > li.submenu > a:after {
+  position: relative;
+  float: right;
+  content: '';
+  margin-left: 10px;
+  margin-top: 8px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid transparent;
+}
+
+.menu-wrapper nav ul > li.submenu:hover > a:after {
+  margin-top: 2px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+}
+
+.menu-wrapper nav > ul > li:hover {
+  background: #4096ee;
+}
+
+/* second stage (the mega-menu) */
+
+.menu-wrapper nav ul.megamenu {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap; 
+ justify-content: flex-start;
+  width: 1200px;
+  top: -9999px;
+  left: 0;
+  padding: 40px 40px 0 40px;
+  background: #fff;
+  text-align: left;
+  border-top: 5px solid #4096ee;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+}
+
+.menu-wrapper nav ul li:hover ul.megamenu {
+  top: 100%;
+}
+
+/* third stage (child-menus in the mega-menu) */
+
+.menu-wrapper nav ul.megamenu ul {
+  width: 45%;
+  margin-bottom: 40px;
+  color: #000;
+  box-shadow: none;
+}
+
+.menu-wrapper nav ul.megamenu h4 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.menu-wrapper nav ul.megamenu ul li {
+  display: block;
+}
+
+.menu-wrapper nav ul.megamenu ul li a {
+  margin-top: 10px;
+  transition: 0.5s;
+  color: #000;
+}
+
+.menu-wrapper nav ul.megamenu ul li a:hover {
+  color: #4096ee;
+}

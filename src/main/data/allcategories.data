@@ -1,0 +1,10 @@
+const allcategories = [
+"A Beautiful Background", "A Beautiful Pattern", "A Bright A Celebration", "A Colorful A Coloring",
+"A Concept", "A Decor", "A Design", "A Handful", "A Holiday", "A Holiday Greeting",  "A Pattern",
+"A Plant", "A Silhouette",  "A Spring", "A Symbol", "A Vector", "About Blue", "About Creative", "About Flower",
+"About Green", "About Person", "About Summer", "About Website", "Abstract Abstract Abstract", "Art Abstract",
+"Backdrop", "Backdrop Backdrop", "Backdrop Background", "Backdrop Colour", "Backdrop Decoration", "Backdrop Design"
+]
+
+
+export default allcategories;
