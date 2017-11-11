@@ -1,6 +1,7 @@
 import React from 'react';
 
 //Component for the filter bar on the home page.
+//const Categories = (props) => {
 class GalleryFilterOptions extends React.Component {
 
     constructor(props){
@@ -11,7 +12,6 @@ class GalleryFilterOptions extends React.Component {
     }
 
     componentDidMount(){
-
 
         if (localStorage.getItem("category-filter")) {
            this.props.filter_category(localStorage.getItem("category-filter"));
@@ -40,11 +40,8 @@ class GalleryFilterOptions extends React.Component {
 
     changeCategory(event){
 
-        //if (event.keyCode == 13 || event.keyCode == 9){
-
             this.props.filter_category(this.category.value);
 
-       // }
     }
 
     changeRating(event) {
@@ -55,22 +52,35 @@ class GalleryFilterOptions extends React.Component {
 
     changeFavourites(event) {
 
-
-            this.props.filter_favourites(this.favourites.value);
-        
+            this.props.filter_favourites(this.favourites.value);   
     }
 
 	render(){
+
+        let cat = this.props.gallery
+            .map(function(val, i){
+                return val.category;
+            })
+            .filter(function (el, i, arr) {
+                return arr.indexOf(el) === i;
+            })
+            .map(function(val,i){
+                return <option key={i} value={val}>{val}</option>
+            });
+
+        cat.unshift(<option key={"none"} value="" selected></option>);
 
 		return (
 
 		<div className="gallery-filter">
                 
           <div className="category box"> <label>Category</label>
-             <input ref={(input) => {this.category = input}} 
-             type="text"  onBlur={this.changeCategory.bind(this)}
-             
-             /></div>
+            <select ref={(input) => {this.category = input}} 
+                 onChange={this.changeCategory.bind(this)} >
+                 {cat}
+            </select>         
+          </div>
+
           <div className="rating box">< label>Rating</label>
              <input ref={(input) => {this.rating = input}} 
                type="number" min="0"  onBlur={this.changeRating.bind(this)}/></div>
