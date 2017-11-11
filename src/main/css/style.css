@@ -34,7 +34,7 @@ html, body {
 
 	flex : 1;
  	
-	display: flex;
+	 display: flex;
 
  	 background:white;
 	 position :relative;
@@ -188,4 +188,24 @@ figcaption {
   flex : 1;
 
 }
+.filter-gallery-container {
+  flex : 1;
+}
 
+.gallery-filter {
+
+  display : flex;
+  justify-content: left;
+  margin: 10px;
+  padding:10px;
+  width : 80%;
+  border-top : 1px solid black;
+}
+
+.gallery-filter .box {
+
+  flex: 1;
+}
+.gallery-filter label {
+    margin-right : 10px;
+}

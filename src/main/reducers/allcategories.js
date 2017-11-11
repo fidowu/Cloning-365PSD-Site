@@ -1,3 +1,4 @@
+
 function allcategories(state=[], action){
 	
 	return state;

@@ -14,3 +14,28 @@ console.log("increase", index);
 		index
 	}
 }
+
+export function filter_category(category) {
+	return {
+
+		type :"FILTER_CATEGORY",
+		category
+	}
+}
+
+export function filter_rating(rating){
+
+	return {
+
+		type: "FILTER_RATING",
+		rating
+	}
+}
+
+export function filter_favourites(favourites){
+
+	return {
+		type: "FILTER_FAVOURITES",
+		favourites
+	}
+}

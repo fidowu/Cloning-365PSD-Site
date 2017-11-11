@@ -39,7 +39,6 @@ class Tags extends React.Component {
   	handle(event){
 
   		
-  		//console.log(event.target);
   		let p = this.props.allcategories
   		      .filter((val, i) => (val.slice(0,1) == event.target.innerHTML) || event.target.innerHTML == "ALL")
   		      .map((val,i) => {

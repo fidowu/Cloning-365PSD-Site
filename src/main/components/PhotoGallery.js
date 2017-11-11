@@ -1,19 +1,20 @@
 import React from 'react';
-import Photo from './Photo';
+import GalleryFilterOptions from './GalleryFilterOptions';
+import SelectedGallery  from './SelectedGallery';
 
 //Gallery of photo data in psd.data file
 
 //can't test stateless functional components with jasmine/karma react always returns null:-()
 //const PhotoGallery = (props) => {
 class PhotoGallery extends React.Component{
+
 	render(){
 
 		return (
-
-				<div className="photo-gallery">
-        				{this.props.gallery.map((gallery, i) => 
-        					<Photo {...this.props} key={i} i={i} gallerys={gallery} />)}
-				</div>
+            <div className="filter-gallery-container">
+                <GalleryFilterOptions {...this.props} />
+                <SelectedGallery />
+            </div>
 
 			)
      }

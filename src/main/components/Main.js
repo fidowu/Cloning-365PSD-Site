@@ -16,7 +16,7 @@ class Main extends React.Component {
 
 				<NavMenu  {...this.props} />
 				<SubMenu />
-
+ 
 		        {React.cloneElement(this.props.children, this.props,  this.props.params)}
 		 </div>
 

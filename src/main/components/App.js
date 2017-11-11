@@ -11,7 +11,10 @@ function mapStateToProps(state) {
   	
     gallery: state.gallery,
     statistics: state.statistics,
-    allcategories: state.allcategories
+    allcategories: state.allcategories,
+    filtercategory: state.filtercategory,
+    filterfavourites : state.filterfavourites,
+    filterrating: state.filterrating
   }
 }
 

@@ -10,7 +10,10 @@ const defaultState = {
 	
  	gallery,
  	statistics,
- 	allcategories
+ 	allcategories,
+ 	filtercategory: "",
+ 	filterrating:"",
+ 	filterfavourites:""
 }
 
 

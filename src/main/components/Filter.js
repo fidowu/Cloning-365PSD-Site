@@ -16,7 +16,6 @@ class Filter extends React.Component{
         					<Photo {...this.props} key={i} i={i} gallerys={gallery} />)}
 			</div>		)
     }
-
 }
 
 Filter.propTypes = {
