@@ -205,12 +205,22 @@ figcaption {
 .gallery-filter .box {
 
   flex: 1;
+
+}
+
+.gallery-filter  input {
+  font-size: 14px;
+  padding:2px;
+
 }
 
 .gallery-filter label {
     margin-right : 10px;
+
 }
 
 .gallery-filter select {
-  padding:3px;
+  padding:4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
