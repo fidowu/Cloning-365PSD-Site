@@ -30,7 +30,7 @@ class SubMenu extends React.Component {
 
 					<div className="search"></div>
 					<div  className="center"></div>
-					<button onClick={this.openDialog.bind(this)}>Subcribe</button>
+					<button onClick={this.openDialog.bind(this)}>SUBSCRIBE</button>
 					<DialogForm enabled={this.state.enabled} closeDialog={this.closeDialog.bind(this)} openDialog={this.openDialog.bind(this)} />
 
 				</div>

@@ -68,7 +68,7 @@ class GalleryFilterOptions extends React.Component {
                 return <option key={i} value={val}>{val}</option>
             });
 
-        cat.unshift(<option key={"none"} value="" selected></option>);
+        cat.unshift(<option key={"none"} defaultValue=""></option>);
 
 		return (
 
